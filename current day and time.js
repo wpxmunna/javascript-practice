@@ -1,0 +1,12 @@
+const today = new Date();
+console.log(today);
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const day = today.getDay();
+console.log("Today is " + days[day]);
+const date = today.getDate();
+console.log(date);
+const month = today.getMonth();
+console.log(month);
+const year = today.getFullYear();
+console.log(year);
+console.log(date + '-' + month + '-' + year);
