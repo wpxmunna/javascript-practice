@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <p id="rotation"></p>
+
+<script>
+    var word = "w3resource";
+    var newArray = word.split("");
+    console.log(newArray);
+
+    setInterval(myRotation, 1000);
+    function myRotation(){
+        var letter = newArray.pop();
+        var unshift = newArray.unshift(letter);
+        var join = newArray.join('');
+        console.log(join);
+        document.getElementById('rotation').innerText = join;
+    }
+</script>
+</body>
+</html>
