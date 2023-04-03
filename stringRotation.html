@@ -12,7 +12,9 @@
     setInterval(myRotation, 1000);
     function myRotation(){
         var letter = newArray.pop();
+        console.log(letter);
         var unshift = newArray.unshift(letter);
+        console.log(unshift);
         var join = newArray.join('');
         console.log(join);
         document.getElementById('rotation').innerText = join;
