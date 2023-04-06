@@ -12,4 +12,4 @@ function CheckLeapYear (year){
         console.log("Not Leap Year");
     }
 }
-CheckLeapYear(2000);
+CheckLeapYear(2015);
