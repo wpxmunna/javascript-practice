@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <p>Pin Matcher</p>
+</body>
+<script>
+    const num = Math.random()*10;
+    const roundNumber = Math.ceil(num);
+    const gNum = prompt('Enter your number: ');
+    const numberGname = parseInt(gNum);
+    if (roundNumber === numberGname){
+        console.log("Matched");
+    }
+    else{
+        console.log("Not Matched, Number is " + roundNumber);
+    }
+</script>
+</html>
