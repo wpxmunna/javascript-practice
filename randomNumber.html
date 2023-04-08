@@ -5,6 +5,8 @@
 </head>
 <body>
     <p>Pin Matcher</p>
+    <h3 id="success"></h3>
+    <h3 id="failed"></h3>
 </body>
 <script>
     const num = Math.random()*10;
@@ -12,10 +14,12 @@
     const gNum = prompt('Enter your number: ');
     const numberGname = parseInt(gNum);
     if (roundNumber === numberGname){
-        console.log("Matched");
+        // console.log("Matched");
+        document.getElementById("success").innerText = "Good Work";
     }
     else{
-        console.log("Not Matched, Number is " + roundNumber);
+        // console.log("Not Matched, Number is " + roundNumber);
+        document.getElementById("failed").innerText = "Not Matched, Number is: " + roundNumber;
     }
 </script>
 </html>
