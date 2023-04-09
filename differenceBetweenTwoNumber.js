@@ -1,4 +1,4 @@
-function diff (num){
+function diffDouble (num){
     if (num<=13){
         return 13-num;
     }
@@ -6,5 +6,16 @@ function diff (num){
         return (num-13)*2;
     }
 }
-console.log(diff(12));
-console.log(diff(52));
+console.log(diffDouble(12));
+console.log(diffDouble(52));
+
+function diffTriple (num){
+    if (num<=19){
+        return 19-num;
+    }
+    else{
+        return (num-19)*3;
+    }
+}
+console.log(diffTriple(12));
+console.log(diffTriple(52));
